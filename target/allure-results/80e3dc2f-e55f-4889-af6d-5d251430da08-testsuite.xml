@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1526727653009" stop="1526727664037" version="1.5.3" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1526727661184" stop="1526727662125" status="broken">
+            <name>testNumberofSearchResult</name>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at home.test.google.pages.ResultPage.getNumberOfresults(ResultPage.java:33)
+	at roi.roitest.SearchResultNumberTest.testNumberofSearchResult(SearchResultNumberTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1526727653175" stop="1526727661117" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                </step>
+                <step start="1526727661187" stop="1526727661422" status="passed">
+                    <name>searchFor[Hello World!]</name>
+                    <title>Search for Hello World!</title>
+                    <steps>
+                        <step start="1526727661188" stop="1526727661422" status="passed">
+                            <name>typeIntoSearchInput[Hello World!]</name>
+                            <title>Type [Hello World!] into Search input</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526727661427" stop="1526727662110" status="broken">
+                    <name>getNumberOfresults</name>
+                    <title>Calculate the number of found results</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="roi.roitest.SearchResultNumberTest"/>
+                <label name="testMethod" value="testNumberofSearchResult"/>
+                <label name="story" value="As user i want to see 10 search result"/>
+                <label name="feature" value="Search "/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="15740@DELL-5559.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526727661184" stop="1526727662125" status="broken">
+            <name>testNumberofSearchResult</name>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at home.test.google.pages.ResultPage.getNumberOfresults(ResultPage.java:33)
+	at roi.roitest.SearchResultNumberTest.testNumberofSearchResult(SearchResultNumberTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1526727653175" stop="1526727661117" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                </step>
+                <step start="1526727661187" stop="1526727661422" status="passed">
+                    <name>searchFor[Hello World!]</name>
+                    <title>Search for Hello World!</title>
+                    <steps>
+                        <step start="1526727661188" stop="1526727661422" status="passed">
+                            <name>typeIntoSearchInput[Hello World!]</name>
+                            <title>Type [Hello World!] into Search input</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526727661427" stop="1526727662110" status="broken">
+                    <name>getNumberOfresults</name>
+                    <title>Calculate the number of found results</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="roi.roitest.SearchResultNumberTest"/>
+                <label name="testMethod" value="testNumberofSearchResult"/>
+                <label name="story" value="As user i want to see 10 search result"/>
+                <label name="feature" value="Search "/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="15740@DELL-5559.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
