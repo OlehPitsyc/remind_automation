@@ -1,0 +1,140 @@
+{
+  "uid" : "351d26555535036f",
+  "name" : "testNumberofSearchResult",
+  "title" : "Test numberof search result",
+  "time" : {
+    "start" : 1526736304954,
+    "stop" : 1526736309800,
+    "duration" : 4846
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 4
+  },
+  "failure" : {
+    "message" : "AssertionError: The number of test result is incorrect:  expected [10] but found [12]",
+    "stackTrace" : "java.lang.AssertionError: The number of test result is incorrect:  expected [10] but found [12]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:389)\n\tat roi.roitest.SearchResultNumberTest.testNumberofSearchResult(SearchResultNumberTest.java:33)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "28949f348ce6fe26",
+    "name" : "Regression : Google Search Tests",
+    "title" : "Regression : Google Search Tests"
+  },
+  "steps" : [ {
+    "name" : "opneStartPage",
+    "title" : "Open google start page: https://www.google.com/",
+    "time" : {
+      "start" : 1526736288948,
+      "stop" : 1526736304648,
+      "duration" : 15700
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "searchFor[Hello World!]",
+    "title" : "Search for Hello World!",
+    "time" : {
+      "start" : 1526736304962,
+      "stop" : 1526736305231,
+      "duration" : 269
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 1
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "typeIntoSearchInput[Hello World!]",
+      "title" : "Type [Hello World!] into Search input",
+      "time" : {
+        "start" : 1526736304963,
+        "stop" : 1526736305231,
+        "duration" : 268
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "getSearchResultNumber",
+    "title" : "Calculate the result number",
+    "time" : {
+      "start" : 1526736305236,
+      "stop" : 1526736308951,
+      "duration" : 3715
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Search Result Number",
+      "source" : "e053c6c2-0ace-447b-a718-cf76f33c0064-attachment.txt",
+      "type" : "text/plain",
+      "size" : 2,
+      "uid" : "ef886547c040ff40"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "assets\\screenshot16.png",
+    "source" : "0e076cff-f1a5-4e70-be62-b18331971657-attachment.png",
+    "type" : "image/png",
+    "size" : 262066,
+    "uid" : "eb21e76e47260f98"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testMethod",
+    "value" : "testNumberofSearchResult"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Google Search Tests"
+  }, {
+    "name" : "suite-title",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "suite-name",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "story",
+    "value" : "As user i want to see 10 search result"
+  }, {
+    "name" : "testSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "thread",
+    "value" : "4120@DELL-5559.pool-1-thread-1(14)"
+  }, {
+    "name" : "feature",
+    "value" : "Search "
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DELL-5559"
+  }, {
+    "name" : "testClass",
+    "value" : "roi.roitest.SearchResultNumberTest"
+  } ],
+  "parameters" : [ ]
+}

@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import ru.yandex.qatools.allure.annotations.Step;
 
-public class Google {
+public class Google implements IWebApp {
 	private WebDriver driver;
 	private static final String baseUrl = "https://www.google.com/";
 
@@ -33,14 +33,14 @@ public class Google {
 		this.driver = null;
 	}
 
-	public void takeScreenshot() {
-		File screen = TakesScreenshot.class.cast(this.driver).getScreenshotAs(OutputType.FILE);
-		File screenPng = new File("assets/screenshot" + LocalDateTime.now().getHour() + ".png");
-		try {
-			FileUtils.copyFile(screen, screenPng);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public File makeScreenshot() {
+		return TakesScreenshot.class.cast(this.driver).getScreenshotAs(OutputType.FILE);
+		/*
+		 * File screenPng = new File("assets/screenshot" + LocalDateTime.now().getHour()
+		 * + ".png"); try { FileUtils.copyFile(screen, screenPng); } catch (IOException
+		 * e) { // TODO Auto-generated catch block e.printStackTrace(); } return
+		 * screenPng;
+		 */
 	}
+
 }

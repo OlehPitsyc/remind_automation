@@ -1,0 +1,82 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 2,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "87ce777ee57ea2ef",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "9bc55780f8d7231b",
+        "name" : "testKeyboardAppearance",
+        "title" : "Test keyboard appearance",
+        "time" : {
+          "start" : 1526736304895,
+          "stop" : 1526736306558,
+          "duration" : 1663
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d3fe67a232bcbf8a",
+        "name" : "testKeyBoardClose",
+        "title" : "Test key board close",
+        "time" : {
+          "start" : 1526736306563,
+          "stop" : 1526736310278,
+          "duration" : 3715
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Search ",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "99487109f0d84aea",
+      "title" : "As user i want to see 10 search result",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 1,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "351d26555535036f",
+        "name" : "testNumberofSearchResult",
+        "title" : "Test numberof search result",
+        "time" : {
+          "start" : 1526736304954,
+          "stop" : 1526736309800,
+          "duration" : 4846
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

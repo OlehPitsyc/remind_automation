@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.686 s <<< FAILURE! - in TestSuite
+testNumberofSearchResult(roi.roitest.SearchResultNumberTest)  Time elapsed: 3.227 s  <<< FAILURE!
+java.lang.AssertionError: The number of test result is incorrect:  expected [10] but found [12]
+	at roi.roitest.SearchResultNumberTest.testNumberofSearchResult(SearchResultNumberTest.java:33)
+

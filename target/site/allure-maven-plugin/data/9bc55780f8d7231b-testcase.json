@@ -1,0 +1,119 @@
+{
+  "uid" : "9bc55780f8d7231b",
+  "name" : "testKeyboardAppearance",
+  "title" : "Test keyboard appearance",
+  "time" : {
+    "start" : 1526736304895,
+    "stop" : 1526736306558,
+    "duration" : 1663
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "28949f348ce6fe26",
+    "name" : "Regression : Google Search Tests",
+    "title" : "Regression : Google Search Tests"
+  },
+  "steps" : [ {
+    "name" : "opneStartPage",
+    "title" : "Open google start page: https://www.google.com/",
+    "time" : {
+      "start" : 1526736288927,
+      "stop" : 1526736304649,
+      "duration" : 15722
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "openScreenKeyboard",
+    "title" : "Open screen keyboard",
+    "time" : {
+      "start" : 1526736304898,
+      "stop" : 1526736306131,
+      "duration" : 1233
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 1
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "clickKeyboardIcon",
+      "title" : "Click keyboard icon",
+      "time" : {
+        "start" : 1526736304899,
+        "stop" : 1526736305489,
+        "duration" : 590
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "isScreenKeyboardDisplayed",
+    "title" : "Check if Screen Keyboard is displayed",
+    "time" : {
+      "start" : 1526736306132,
+      "stop" : 1526736306548,
+      "duration" : 416
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testClass",
+    "value" : "roi.roitest.ScreenKeyBoardTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "Google Search Tests"
+  }, {
+    "name" : "suite-title",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "suite-name",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "thread",
+    "value" : "4120@DELL-5559.pool-1-thread-2(15)"
+  }, {
+    "name" : "testSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DELL-5559"
+  }, {
+    "name" : "testMethod",
+    "value" : "testKeyboardAppearance"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,104 @@
+{
+  "uid" : "d3fe67a232bcbf8a",
+  "name" : "testKeyBoardClose",
+  "title" : "Test key board close",
+  "time" : {
+    "start" : 1526736306563,
+    "stop" : 1526736310278,
+    "duration" : 3715
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 3
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "28949f348ce6fe26",
+    "name" : "Regression : Google Search Tests",
+    "title" : "Regression : Google Search Tests"
+  },
+  "steps" : [ {
+    "name" : "closeScreenKeyboard",
+    "title" : "Close Screen Keyboard",
+    "time" : {
+      "start" : 1526736309566,
+      "stop" : 1526736310217,
+      "duration" : 651
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 1
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "clickScreenKeyboardCloseButton",
+      "title" : "Click screen keyboard close button",
+      "time" : {
+        "start" : 1526736309568,
+        "stop" : 1526736310217,
+        "duration" : 649
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "isScreenKeyboardDisplayed",
+    "title" : "Check if Screen Keyboard is displayed",
+    "time" : {
+      "start" : 1526736310219,
+      "stop" : 1526736310278,
+      "duration" : 59
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testMethod",
+    "value" : "testKeyBoardClose"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testClass",
+    "value" : "roi.roitest.ScreenKeyBoardTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "Google Search Tests"
+  }, {
+    "name" : "suite-title",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "suite-name",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "thread",
+    "value" : "4120@DELL-5559.pool-1-thread-2(15)"
+  }, {
+    "name" : "testSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DELL-5559"
+  } ],
+  "parameters" : [ ]
+}

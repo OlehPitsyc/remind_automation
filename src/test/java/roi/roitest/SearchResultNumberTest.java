@@ -6,13 +6,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import home.test.google.pages.Google;
+import home.test.google.pages.IWebApp;
+import home.test.google.pages.IWebAppTest;
 import home.test.google.pages.ResultPage;
 import home.test.google.pages.StartPage;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 
 @Features("Search ")
-public class SearchResultNumberTest {
+public class SearchResultNumberTest implements IWebAppTest {
 
 	private StartPage startPage;
 	private Google google = new Google();
@@ -28,7 +30,6 @@ public class SearchResultNumberTest {
 	public void testNumberofSearchResult() throws InterruptedException {
 		resultPage = startPage.searchFor("Hello World!");
 		int actualNumber = resultPage.getSearchResultNumber();
-		google.takeScreenshot();
 		Assert.assertEquals(actualNumber, 10, "The number of test result is incorrect: ");
 	}
 
@@ -37,14 +38,16 @@ public class SearchResultNumberTest {
 	 * @Test public void testSearchResultNumber() { int actualNumber =
 	 * google.opneStartPage().searchFor("Hello world!").getNumberOfresults();
 	 * Assert.assertEquals(actualNumber, 10,
-	 * "The number of test result is incorrect: ");
-	 * 
-	 * }
+	 * "The number of test result is incorrect: "); }
 	 */
 
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		google.close();
 
+	}
+
+	public IWebApp getTestedApp() {
+		return this.google;
 	}
 }

@@ -1,8 +1,13 @@
 package home.test.google.pages;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.internal.IResultListener2;
+
+import ru.yandex.qatools.allure.annotations.Attachment;
 
 public class TestResultListiner implements IResultListener2 {
 
@@ -25,9 +30,24 @@ public class TestResultListiner implements IResultListener2 {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult arg0) {
+	public void onTestFailure(ITestResult result) {
 		System.out.println("FAILURE!!!");
+		IWebAppTest test;
+		if (result.getInstance() instanceof IWebAppTest) {
+			test = IWebAppTest.class.cast(result.getInstance());
+			File screenshot = test.getTestedApp().makeScreenshot();
+			allureScreenshot(screenshot, "Failure Screenshot");
+		}
+	}
 
+	@Attachment("{1}")
+	private byte[] allureScreenshot(File screen, String name) {
+		try {
+			return FileUtils.readFileToByteArray(screen);
+
+		} catch (Exception e) {
+			return null;
+		}
 	}
 
 	@Override
