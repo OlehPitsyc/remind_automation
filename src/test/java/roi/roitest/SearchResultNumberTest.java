@@ -1,8 +1,9 @@
 package roi.roitest;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import home.test.google.pages.Google;
@@ -20,17 +21,23 @@ public class SearchResultNumberTest implements IWebAppTest {
 	private Google google = new Google();
 	private ResultPage resultPage;
 
-	@BeforeClass
+	@BeforeMethod
 	public void setup() {
 		startPage = google.opneStartPage();
 	}
 
 	@Stories("As user i want to see 10 search result")
-	@Test
-	public void testNumberofSearchResult() throws InterruptedException {
-		resultPage = startPage.searchFor("Hello World!");
+	@Test(dataProvider = "dataProvider")
+	public void testNumberofSearchResult(String dataForTest) {
+		resultPage = startPage.searchFor(dataForTest);
 		int actualNumber = resultPage.getSearchResultNumber();
 		Assert.assertEquals(actualNumber, 10, "The number of test result is incorrect: ");
+	}
+
+	@DataProvider(name = "dataProvider")
+	public Object[][] data() {
+		return new Object[][] { { "Hello World!" }, { "911" }, { "Selenium IDE" } };
+
 	}
 
 	// the same test as before but actualy in one line
@@ -41,7 +48,7 @@ public class SearchResultNumberTest implements IWebAppTest {
 	 * "The number of test result is incorrect: "); }
 	 */
 
-	@AfterClass(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		google.close();
 

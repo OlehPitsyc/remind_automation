@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1526814422312" stop="1526814454752" version="1.5.3" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Regression : Google Search Tests</name>
+    <title>Regression : Google Search Tests</title>
+    <test-cases>
+        <test-case start="1526814431119" stop="1526814431402" status="broken">
+            <name>testKeyboardAppearance</name>
+            <failure>
+                <message>NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"gs_st0"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 208 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DELL-5559', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Oleg\AppData\Local\Temp\scoped_dir17232_5339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b7c2074f947d63042ae0e20bd796f208
+*** Element info: {Using=id, value=gs_st0}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"gs_st0"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 208 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DELL-5559', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Oleg\AppData\Local\Temp\scoped_dir17232_5339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b7c2074f947d63042ae0e20bd796f208
+*** Element info: {Using=id, value=gs_st0}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at home.test.google.pages.StartPage.clickKeyboardIcon(StartPage.java:61)
+	at home.test.google.pages.StartPage.openScreenKeyboard(StartPage.java:55)
+	at roi.roitest.ScreenKeyBoardTest.testKeyboardAppearance(ScreenKeyBoardTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1526814422495" stop="1526814431045" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                </step>
+                <step start="1526814431122" stop="1526814431342" status="broken">
+                    <name>openScreenKeyboard</name>
+                    <steps>
+                        <step start="1526814431123" stop="1526814431342" status="broken">
+                            <name>clickKeyboardIcon</name>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Regression"/>
+                <label name="testGroup" value="Google Search Tests"/>
+                <label name="testClass" value="roi.roitest.ScreenKeyBoardTest"/>
+                <label name="testMethod" value="testKeyboardAppearance"/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="7816@DELL-5559.pool-1-thread-2(15)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526814431407" stop="1526814434448" status="broken">
+            <name>testKeyBoardClose</name>
+            <failure>
+                <message>NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".vk-t-btn"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DELL-5559', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Oleg\AppData\Local\Temp\scoped_dir17232_5339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b7c2074f947d63042ae0e20bd796f208
+*** Element info: {Using=css selector, value=.vk-t-btn}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".vk-t-btn"}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DELL-5559', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Oleg\AppData\Local\Temp\scoped_dir17232_5339}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b7c2074f947d63042ae0e20bd796f208
+*** Element info: {Using=css selector, value=.vk-t-btn}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at home.test.google.pages.StartPage.clickScreenKeyboardCloseButton(StartPage.java:76)
+	at home.test.google.pages.StartPage.closeScreenKeyboard(StartPage.java:71)
+	at roi.roitest.ScreenKeyBoardTest.testKeyBoardClose(ScreenKeyBoardTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1526814434409" stop="1526814434445" status="broken">
+                    <name>closeScreenKeyboard</name>
+                    <title>Close Screen Keyboard</title>
+                    <steps>
+                        <step start="1526814434411" stop="1526814434445" status="broken">
+                            <name>clickScreenKeyboardCloseButton</name>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Regression"/>
+                <label name="testGroup" value="Google Search Tests"/>
+                <label name="testClass" value="roi.roitest.ScreenKeyBoardTest"/>
+                <label name="testMethod" value="testKeyBoardClose"/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="7816@DELL-5559.pool-1-thread-2(15)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526814433211" stop="1526814437146" status="failed">
+            <name>testNumberofSearchResult[Hello World!]</name>
+            <failure>
+                <message>AssertionError: The number of test result is incorrect:  expected [10] but found [12]</message>
+                <stack-trace>java.lang.AssertionError: The number of test result is incorrect:  expected [10] but found [12]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at roi.roitest.SearchResultNumberTest.testNumberofSearchResult(SearchResultNumberTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1526814422496" stop="1526814433209" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                </step>
+                <step start="1526814433220" stop="1526814435391" status="passed">
+                    <name>searchFor[Hello World!]</name>
+                    <title>Search for Hello World!</title>
+                    <steps>
+                        <step start="1526814433221" stop="1526814435390" status="passed">
+                            <name>typeIntoSearchInput[Hello World!]</name>
+                            <title>Type [Hello World!] into Search input</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526814435399" stop="1526814436712" status="passed">
+                    <name>getSearchResultNumber</name>
+                    <title>Calculate the result number</title>
+                    <attachments>
+                        <attachment title="Search Result Number" source="7dc08144-58e5-4daf-b67c-554e9efa8e84-attachment.txt" type="text/plain"/>
+                    </attachments>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Failure Screenshot" source="9833f7c0-8027-44f3-95c4-125fd92efa9d-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Regression"/>
+                <label name="testGroup" value="Google Search Tests"/>
+                <label name="testClass" value="roi.roitest.SearchResultNumberTest"/>
+                <label name="testMethod" value="testNumberofSearchResult"/>
+                <label name="story" value="As user i want to see 10 search result"/>
+                <label name="feature" value="Search "/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="7816@DELL-5559.pool-1-thread-1(14)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526814442878" stop="1526814445328" status="passed">
+            <name>testNumberofSearchResult[911]</name>
+            <steps>
+                <step start="1526814438227" stop="1526814442876" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1526814442880" stop="1526814444851" status="passed">
+                    <name>searchFor[911]</name>
+                    <title>Search for 911</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1526814442885" stop="1526814444851" status="passed">
+                            <name>typeIntoSearchInput[911]</name>
+                            <title>Type [911] into Search input</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526814444853" stop="1526814445328" status="passed">
+                    <name>getSearchResultNumber</name>
+                    <title>Calculate the result number</title>
+                    <attachments>
+                        <attachment title="Search Result Number" source="834d1d80-528d-422b-9acf-f47a976a9ce7-attachment.txt" type="text/plain"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Regression"/>
+                <label name="testGroup" value="Google Search Tests"/>
+                <label name="testClass" value="roi.roitest.SearchResultNumberTest"/>
+                <label name="testMethod" value="testNumberofSearchResult"/>
+                <label name="story" value="As user i want to see 10 search result"/>
+                <label name="feature" value="Search "/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="7816@DELL-5559.pool-1-thread-1(14)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526814451227" stop="1526814453701" status="failed">
+            <name>testNumberofSearchResult[Selenium IDE]</name>
+            <failure>
+                <message>AssertionError: The number of test result is incorrect:  expected [10] but found [11]</message>
+                <stack-trace>java.lang.AssertionError: The number of test result is incorrect:  expected [10] but found [11]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at roi.roitest.SearchResultNumberTest.testNumberofSearchResult(SearchResultNumberTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1526814446511" stop="1526814451226" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                </step>
+                <step start="1526814451229" stop="1526814452787" status="passed">
+                    <name>searchFor[Selenium IDE]</name>
+                    <title>Search for Selenium IDE</title>
+                    <steps>
+                        <step start="1526814451236" stop="1526814452787" status="passed">
+                            <name>typeIntoSearchInput[Selenium IDE]</name>
+                            <title>Type [Selenium IDE] into Search input</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526814452788" stop="1526814453227" status="passed">
+                    <name>getSearchResultNumber</name>
+                    <title>Calculate the result number</title>
+                    <attachments>
+                        <attachment title="Search Result Number" source="a2d3fab6-5245-4b60-896e-ce7786fc01b0-attachment.txt" type="text/plain"/>
+                    </attachments>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Failure Screenshot" source="89ca8e2a-e73c-4ee1-b7cb-7b7b84539287-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Regression"/>
+                <label name="testGroup" value="Google Search Tests"/>
+                <label name="testClass" value="roi.roitest.SearchResultNumberTest"/>
+                <label name="testMethod" value="testNumberofSearchResult"/>
+                <label name="story" value="As user i want to see 10 search result"/>
+                <label name="feature" value="Search "/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="7816@DELL-5559.pool-1-thread-1(14)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

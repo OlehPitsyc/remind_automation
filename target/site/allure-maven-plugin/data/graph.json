@@ -1,36 +1,58 @@
 {
   "testCases" : [ {
-    "uid" : "9bc55780f8d7231b",
+    "uid" : "3939cd86d958de4c",
     "name" : "testKeyboardAppearance",
     "title" : "Test keyboard appearance",
     "time" : {
-      "start" : 1526736304895,
-      "stop" : 1526736306558,
-      "duration" : 1663
+      "start" : 1526814431119,
+      "stop" : 1526814431402,
+      "duration" : 283
     },
     "severity" : "NORMAL",
-    "status" : "PASSED"
+    "status" : "BROKEN"
   }, {
-    "uid" : "351d26555535036f",
-    "name" : "testNumberofSearchResult",
-    "title" : "Test numberof search result",
+    "uid" : "723db712f08432e0",
+    "name" : "testKeyBoardClose",
+    "title" : "Test key board close",
     "time" : {
-      "start" : 1526736304954,
-      "stop" : 1526736309800,
-      "duration" : 4846
+      "start" : 1526814431407,
+      "stop" : 1526814434448,
+      "duration" : 3041
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  }, {
+    "uid" : "6751c9a75fd4b7e5",
+    "name" : "testNumberofSearchResult[Hello World!]",
+    "title" : "Test numberof search result [Hello World!]",
+    "time" : {
+      "start" : 1526814433211,
+      "stop" : 1526814437146,
+      "duration" : 3935
     },
     "severity" : "NORMAL",
     "status" : "FAILED"
   }, {
-    "uid" : "d3fe67a232bcbf8a",
-    "name" : "testKeyBoardClose",
-    "title" : "Test key board close",
+    "uid" : "923dffd2c6aae02f",
+    "name" : "testNumberofSearchResult[911]",
+    "title" : "Test numberof search result [911]",
     "time" : {
-      "start" : 1526736306563,
-      "stop" : 1526736310278,
-      "duration" : 3715
+      "start" : 1526814442878,
+      "stop" : 1526814445328,
+      "duration" : 2450
     },
     "severity" : "NORMAL",
     "status" : "PASSED"
+  }, {
+    "uid" : "901863b3462e2134",
+    "name" : "testNumberofSearchResult[Selenium IDE]",
+    "title" : "Test numberof search result [Selenium IDE]",
+    "time" : {
+      "start" : 1526814451227,
+      "stop" : 1526814453701,
+      "duration" : 2474
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
   } ]
 }

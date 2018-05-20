@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1526817764180" stop="1526817781919" version="1.5.3" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1526817776102" stop="1526817777298" status="passed">
+            <name>testKeyboardAppearance</name>
+            <steps>
+                <step start="1526817764376" stop="1526817775984" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1526817776108" stop="1526817777123" status="passed">
+                    <name>openScreenKeyboard</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1526817776110" stop="1526817776510" status="passed">
+                            <name>clickKeyboardIcon</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526817777128" stop="1526817777286" status="passed">
+                    <name>isScreenKeyboardDisplayed</name>
+                    <title>Check if Screen Keyboard is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="roi.roitest.ScreenKeyBoardTest"/>
+                <label name="testMethod" value="testKeyboardAppearance"/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="16448@DELL-5559.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526817776102" stop="1526817777298" status="passed">
+            <name>testKeyboardAppearance</name>
+            <steps>
+                <step start="1526817764376" stop="1526817775984" status="passed">
+                    <name>opneStartPage</name>
+                    <title>Open google start page: https://www.google.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1526817776108" stop="1526817777123" status="passed">
+                    <name>openScreenKeyboard</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1526817776110" stop="1526817776510" status="passed">
+                            <name>clickKeyboardIcon</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526817777128" stop="1526817777286" status="passed">
+                    <name>isScreenKeyboardDisplayed</name>
+                    <title>Check if Screen Keyboard is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="roi.roitest.ScreenKeyBoardTest"/>
+                <label name="testMethod" value="testKeyboardAppearance"/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="16448@DELL-5559.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526817777309" stop="1526817780710" status="passed">
+            <name>testKeyBoardClose</name>
+            <steps>
+                <step start="1526817780312" stop="1526817780579" status="passed">
+                    <name>closeScreenKeyboard</name>
+                    <title>Close Screen Keyboard</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1526817780313" stop="1526817780579" status="passed">
+                            <name>clickScreenKeyboardCloseButton</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526817780581" stop="1526817780709" status="passed">
+                    <name>isScreenKeyboardDisplayed</name>
+                    <title>Check if Screen Keyboard is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="roi.roitest.ScreenKeyBoardTest"/>
+                <label name="testMethod" value="testKeyBoardClose"/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="16448@DELL-5559.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1526817777309" stop="1526817780710" status="passed">
+            <name>testKeyBoardClose</name>
+            <steps>
+                <step start="1526817780312" stop="1526817780579" status="passed">
+                    <name>closeScreenKeyboard</name>
+                    <title>Close Screen Keyboard</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1526817780313" stop="1526817780579" status="passed">
+                            <name>clickScreenKeyboardCloseButton</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1526817780581" stop="1526817780709" status="passed">
+                    <name>isScreenKeyboardDisplayed</name>
+                    <title>Check if Screen Keyboard is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="roi.roitest.ScreenKeyBoardTest"/>
+                <label name="testMethod" value="testKeyBoardClose"/>
+                <label name="host" value="DELL-5559"/>
+                <label name="thread" value="16448@DELL-5559.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,131 @@
+{
+  "uid" : "923dffd2c6aae02f",
+  "name" : "testNumberofSearchResult[911]",
+  "title" : "Test numberof search result [911]",
+  "time" : {
+    "start" : 1526814442878,
+    "stop" : 1526814445328,
+    "duration" : 2450
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "12e0feba653379d2",
+    "name" : "Regression : Google Search Tests",
+    "title" : "Regression : Google Search Tests"
+  },
+  "steps" : [ {
+    "name" : "opneStartPage",
+    "title" : "Open google start page: https://www.google.com/",
+    "time" : {
+      "start" : 1526814438227,
+      "stop" : 1526814442876,
+      "duration" : 4649
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "searchFor[911]",
+    "title" : "Search for 911",
+    "time" : {
+      "start" : 1526814442880,
+      "stop" : 1526814444851,
+      "duration" : 1971
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 1
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "typeIntoSearchInput[911]",
+      "title" : "Type [911] into Search input",
+      "time" : {
+        "start" : 1526814442885,
+        "stop" : 1526814444851,
+        "duration" : 1966
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "getSearchResultNumber",
+    "title" : "Calculate the result number",
+    "time" : {
+      "start" : 1526814444853,
+      "stop" : 1526814445328,
+      "duration" : 475
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Search Result Number",
+      "source" : "834d1d80-528d-422b-9acf-f47a976a9ce7-attachment.txt",
+      "type" : "text/plain",
+      "size" : 2,
+      "uid" : "4e8274f0ff6cc25c"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testMethod",
+    "value" : "testNumberofSearchResult"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Google Search Tests"
+  }, {
+    "name" : "suite-title",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "suite-name",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "story",
+    "value" : "As user i want to see 10 search result"
+  }, {
+    "name" : "testSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Search "
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "7816@DELL-5559.pool-1-thread-1(14)"
+  }, {
+    "name" : "host",
+    "value" : "DELL-5559"
+  }, {
+    "name" : "testClass",
+    "value" : "roi.roitest.SearchResultNumberTest"
+  } ],
+  "parameters" : [ ]
+}
